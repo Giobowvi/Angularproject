@@ -1,0 +1,136 @@
+.main {
+    margin: 0;
+    padding: 0;
+    background-image: url(https://static.wixstatic.com/media/5bfb6f_a463284fd84145f292a32dc0f0e0cc31.jpg/v1/fill/w_980,h_801,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/5bfb6f_a463284fd84145f292a32dc0f0e0cc31.jpg);
+    background-size: 100%;
+    background-position: center;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.columns-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.columns-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row; 
+}
+
+
+.column {
+    width: 100%;
+    margin: 20px 0;
+    background-color: #f0f8ff;
+}
+
+
+.container{
+    background-color: rgba(13, 13, 56, 0.7);
+    width: 100%;
+    color: white;
+    text-align: right;
+    padding-right: 40px;
+    padding-top: 30%;
+    position: static;
+    display: grid;
+    height: auto;
+    min-height: 350px;
+    grid-template-rows: min-content 1fr;
+    grid-template-columns: 100%;
+    font-weight: bold;
+}
+
+.container {
+    flex: 1;
+}
+
+.container2 {
+    background-color: #f0f8ff;
+    width: 64%; 
+    color: midnightblue;
+    position: static;
+    display: grid;
+    height: auto;
+    width: 100%;
+    min-height: 350px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr; 
+    flex-direction: row-reverse;
+    width: 100%;
+}
+
+
+.columns-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.column {
+    width: 100%; 
+    margin: 20px 0;
+    background-color: #f0f8ff;
+}
+
+.column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.column li {
+    margin: 10px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.column li::before {
+    content: '\25A0';
+    color: midnightblue;
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 10px;
+}
+
+.column p {
+    margin: 5px 0;
+}
+
+@media only screen and (max-width: 767px) {
+    
+
+    .container {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .container2 {
+        width: 100%;
+    }
+
+    .columns-container {
+        padding: 10px;
+    }
+
+    .column {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+}
+
+

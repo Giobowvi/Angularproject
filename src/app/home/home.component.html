@@ -1,0 +1,54 @@
+<div class="main">
+    <div class="container">
+        <div class="background-box"></div>
+        <div class="content">
+            <div class="grid-container">
+                <div class="headline">
+                    <h1>
+                        <span class="headline-text">HOTEL</span><br>
+                        <span class="headline-text">RESERVATIONS</span>
+                    </h1>
+                </div>
+                <div class="description">
+                    <p>
+                        <span class="description-text">CHEAP PRICES & <br> GREAT SELECTION</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container2">
+      <div class="background-box2"></div>
+      <div class="content2">
+        <div class="grid-container2">
+          <div class="headline2">
+            <h1>
+              <span class="headline-text2"><b>HOTEL</b></span><br>
+              <span class="headline-text2">AREAS</span>
+            </h1>
+          </div>
+          <div class="columns-container">
+            <div class="column" *ngFor="let hotel of hotels">
+              <div class="card" style="width: auto; height: auto; display: flex; justify-content: space-evenly; flex-direction: row;">
+                <img [src]="hotel.featuredImage" alt="Hotel Image" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">{{ hotel.name }}</h5>
+                  <p class="card-text">City: {{ hotel.city }}</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">ID: {{ hotel.id }}</li>
+                  <li class="list-group-item">Rooms: {{ hotel.rooms }}</li>
+                  <li class="list-group-item">Address: {{ hotel.address }}</li>
+                </ul>
+                <div class="card-body">
+                  <button type="button" routerLink="/book" class="btn btn-success" >Book a Room</button>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

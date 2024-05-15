@@ -1,0 +1,32 @@
+<div class="rooms-introductions">
+    <h1>here you can book your rooms and stay for the night!</h1>
+</div>
+
+<div class="filter-price">
+    <div class="btn-group" role="group" aria-label="Price filter">
+        <button type="button" class="btn btn-secondary" (click)="filterByPrice(100)">Price: $100</button>
+        <button type="button" class="btn btn-secondary" (click)="filterByPrice(150)">Price: $150</button>
+        <button type="button" class="btn btn-secondary" (click)="filterByPrice(200)">Price: $200</button>
+    </div>
+</div>
+
+<div class="rooms">
+    <div *ngFor="let rooms of rooms">
+        <div class="card" style="width: 18rem;">
+            <img [src]="rooms.image" alt="Room Image" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">{{ rooms.name }}</h5>
+              <p class="card-text">Id: {{ rooms.id }}</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Price: {{ rooms.price }}</li>
+              <li class="list-group-item">Description: {{ rooms.description }}</li>
+              
+            </ul>
+            <div class="card-body">
+              <button type="button" routerLink="/book" class="btn btn-success">Book The Room</button>
+              
+            </div>
+          </div>
+        </div>
+</div>

@@ -1,0 +1,142 @@
+.main {
+    
+    background-image: url(https://static.wixstatic.com/media/5bfb6f_c9a631e8e43443cb9d7ad97133d9d83d.jpg/v1/fill/w_980,h_860,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/5bfb6f_c9a631e8e43443cb9d7ad97133d9d83d.jpg);
+    background: linear-gradient(rgba(9, 79, 107, 0.747), rgba(0, 183, 255, 0.5)), url(https://static.wixstatic.com/media/5bfb6f_c9a631e8e43443cb9d7ad97133d9d83d.jpg/v1/fill/w_980,h_860,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/5bfb6f_c9a631e8e43443cb9d7ad97133d9d83d.jpg);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    nav h1 {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    nav img {
+        margin-left: 0;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .container2 {
+        width: 100%;
+    }
+
+    .columns-container {
+        padding: 10px;
+    }
+
+    .column {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+
+body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.concont {
+    background-color: rgba(7, 7, 22, 0.7);
+    width: 100%;
+    color: white;
+    text-align: right;
+    padding-right: 40px;
+    padding-top: 30%;
+    position: static;
+    display: grid;
+    height: auto;
+    min-height: 350px;
+    grid-template-rows: min-content 1fr;
+    grid-template-columns: 100%;
+    font-weight: bold;
+}
+
+.contactinfo {
+    width: 100%;
+    margin: 30px;
+    height: auto;
+    margin-right: 100%;
+    background-color: rgba(7, 7, 22, 0.7);
+    padding-right: 40px;
+    padding-top: 30%;
+    border: transparent rgba(2, 2, 5, 0.7);
+    border-top: 50px;
+}
+.contact-form {
+    background-color: rgba(13, 13, 56, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    padding: 20px;
+    border-radius: 8px;
+    padding-right: 40px;
+    padding-top: 30%;
+}
+
+label {
+    margin-bottom: 8px;
+    color: rgb(255, 255, 255);
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: white;
+    color: black;
+}
+
+button {
+    width: 50%;
+    padding: 10px;
+    background-color: #1b4585;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #070b35;
+}
+
+.con{
+    color: rgb(255, 255, 255);
+}
+
+.twitter{
+    color: white;
+}
+
+.linkedin{
+    color: white;
+}
+
+.contactbox{
+    position: absolute;
+    top: 0px;
+    z-index: 100;
+    width: auto;
+    height: auto;
+    color: aqua;
+    opacity: 0.4;
+}
+    
